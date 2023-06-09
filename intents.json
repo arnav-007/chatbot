@@ -1,0 +1,226 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, please let me assist you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "STCAS",
+      "patterns": ["Could you pls assist me with Stcas", "I have an issue with STCAS", "I have an issue with Stcas"],
+      "responses": [ 
+        "I can see that you have an issue with STCAS,please give me details.",
+        "I notice you have a problem with STCAS; could you please provide further information?",
+        "I see you're having a problem with STCAS; could you kindly elaborate?"
+      ]
+    },
+    {
+      "tag": "STCAS1",
+      "patterns": ["Loco switched to LS mode", "Loco entered LS mode", "Loco went into LS mode", "Loco changed to LS mode"],
+      "responses": ["There might be RF communication issues between LTCAS and STCAS", "Missing of two consecutive normal tags", "Not sufficient SSP information or MA>SSP"]
+    },
+    {
+      "tag": "STCAS2",
+      "patterns": [
+        "KMS keys are not updated",
+        "KMS keys haven't been updated",
+        "KMS keys have not been updated."
+      ],
+      "responses": [
+        "check whether the GSM cards are healthy",
+        "Check whether the SIM cards are placed correctly in their slots",
+        "check  whether the VCs are healthy"
+      ]
+    },
+    {
+      "tag": "STCAS3",
+      "patterns": [
+        "singnal non correspondance",
+        "SIGNAL NON CORRESPONDANCE",
+        "singnal non correspondance"
+      ],
+      "responses": [
+        "Check if the relays of the signal are in PICK state.",
+        "check if the proving ASCPR track relay contacts are in PICK state",
+        "check for the ahead point relay contact status"
+      ]
+    },
+    {
+      "tag": "STCAS4",
+      "patterns": [
+        "loco not registered with TCAS",
+        "The loco is not TCAS-registered",
+        "LOCO NOT REGISTERED WITH TCAS"
+      ],
+      "responses": [
+        "Check the KMS keys are healthy in the station",
+        "check whether the STCAS is healthy"
+      ]
+    },
+    {
+      "tag": "LTCAS",
+      "patterns": [
+        "Could you pls assist me with Ltcas",
+        "I have an issue with LTCAS",
+        "I have an issue with Ltcas"
+      ],
+      "responses": ["Hi there, please let me assist you?",
+        "I can see that you have an issue with LTCAS,please give me details.",
+        "I notice you have a problem with LTCAS; could you please provide further information?",
+        "I see you're having a problem with LTCAS; could you kindly elaborate?"
+      ]
+    },
+    {
+      "tag": "LTCAS1",
+      "patterns": [
+        "System failure mode",
+        "SYSTEM FAILURE MODE",
+        "System failure mode"
+      ],
+      "responses": [
+        "There are number of Signal failure mode.Please select one of the specific mode",
+        "they can be System failure mode<DMI>,System failure mode<GPS>,System failure mode<SPD>,System failure mode<Radio>,System failure mode<BRAKE>",
+        "There are number of Signal failure mode.Please select one of the specific mode"
+      ]
+    },
+    {
+      "tag": "LTCAS2",
+      "patterns": [
+        "System failure mode<DMI>",
+        "SYSTEM FAILURE MODE<DMI>",
+        "System failure mode<DMI>"
+      ],
+      "responses": [
+        "This basically occurs due to Power connectivity issues",
+        "Pleasse ensure that the cable connections to all the channels are healthy",
+        "PLease check the channel connectivity to the DMI",
+        "if you still feel that,the issue is not resolved please raise an FSR in the Panorma"
+      ]
+    },
+    {
+      "tag": "LTCAS3",
+      "patterns": [
+        "System failure mode<GPS>",
+        "System FAILURE MODE<GPS>",
+        "System failure mode<GPS>"
+      ],
+      "responses": [
+        "Please ensure that there is power supply to the ppc raids",
+        "PLease make sure that the PPC cards are healthy",
+        "The software used in the PPC cards might be old",
+        "if you still feel that,the issue is not resolved please raise an FSR in the Panorma"
+      ]
+    },
+    {
+      "tag": "LTCAS4",
+      "patterns": [
+        "System failure mode<SPD>",
+        "SYSTEM FAILURE MODE<SPD>",
+        "System failure mode<SPD>"
+      ],
+      "responses": [
+        "This basically occurs due to sudden drop in speed in LTCAS,then the loco will go to Failure SPEEDOMETER",
+        "PLease check the pulse Generators are properly connected",
+        "The Pulse Generators used in LTCAS might be the old firmware",
+        "if you still feel that,the issue is not resolved please raise an FSR in the Panorma"
+      ]
+      
+    },
+    {
+      "tag": "LTCAS5",
+      "patterns": [
+        "System failure mode<Radio>",
+        "SYSTEM FAILURE MODE<Radio>",
+        "System failure mode<Radio>"
+      ],
+      "responses": [
+        "This issue occurs in LTCAS when Radios are not healthy ",
+        "Please check if the Radios are healthy",
+        "Check the power connector of  the radio cables to the TCAS system is intact",
+        "if you still feel that,the issue is not resolved please raise an FSR in the Panorma"
+      ]
+    },
+    {
+      "tag": "LTCAS6",
+      "patterns": [
+        "System failure mode<BRAKE>",
+        "SYSTEM FAILURE MODE<BRAKE>",
+        "System failure mode<BRAKE>"
+      ],
+      "responses": [
+        "This issue occurs in LTCAS with respect to BRAKE,the issue ",
+        "Please check if the brake Interface unit is properly grounded ",
+        "PLease check if all connections of BIU are healthy",
+        "if you still feel that,the issue is not resolved please raise an FSR in the Panorma"
+      ]
+    },
+    {
+      "tag": "LTCAS7",
+      "patterns": [
+        "System failure mode<BRAKE>",
+        "SYSTEM FAILURE MODE<BRAKE>",
+        "System failure mode<BRAKE>"
+      ],
+      "responses": [
+        "This issue occurs in LTCAS with respect to BRAKE,the issue ",
+        "Please check if the brake Interface unit is properly grounded ",
+        "PLease check if all connections of BIU are healthy",
+        "if you still feel that,the issue is not resolved please raise an FSR in the Panorma"
+      ]
+    },
+    {
+      "tag": "rollback",
+      "patterns": [
+        "Roll back detection",
+        "ROLL BACK DETECTION",
+        "roll back detection"
+      ],
+      "responses": [
+        "This issue occurs when there is any issue with Pulse Generators ",
+        "Please check the PG connectivity and take the necessary actions ",
+        "Check whether the PG's are at fault.Replace them with new PG's",
+        "if you still feel that,the issue is not resolved please raise an FSR in the Panorma"
+      ]
+    },
+    {
+      "tag": "noncorresponance",
+      "patterns": [
+        "singnal non correspondance",
+        "SIGNAL NON CORRESPONDANCE",
+        "singnal non correspondance"
+      ],
+      "responses": [
+        "if non-correspondance of the signal happens with the other firm sections,then we can consider as not a LTCAS issue",
+        "If non-correspondance of the signal happens in HBL firm section ",
+        "if you still feel that,the issue is not resolved please raise an FSR in the Panorma"
+      ]
+    },
+    {
+      "tag": "mode",
+      "patterns": [
+        "Loco switched to LS mode",
+        "LS mode",
+        "ls mode"
+      ],
+      "responses": [
+        "if an LTCAS is continuously swiching to LS mode,then there might be issues with the radio cnnnectivity",
+        "please check the radio continuity or ensure that the radio cables are intact",
+        "if you still feel that,the issue is not resolved please raise an FSR in the Panorma"
+      ]
+
+    }
+
+  ]
+}
